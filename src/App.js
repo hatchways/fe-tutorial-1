@@ -1,24 +1,39 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
+
+const useStyles = makeStyles(theme => ({
+  signUp: {
+    border: "1px solid black",
+    borderRadius: 19,
+    margin: 15,
+    position: "absolute",
+    right: 0
+  },
+  leftContainer: {
+    backgroundColor: "black",
+    color: "white"
+  },
+  rightContainer: {
+    position: "relative"
+  }
+}));
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <div id="container">
-        <div id="left_container" class="half_container">
-          left container
-        </div>
-        <div id="right_container" class="half_container">
-          right container
-          <a href="/signup" id="signup">
-            sign up
-          </a>
-        </div>
-      </div>
-    </div>
+    <Grid container style={{ height: "100vh" }}>
+      <Grid item xs={6} className={classes.leftContainer}>
+        left container
+      </Grid>
+      <Grid item xs={6} className={classes.rightContainer}>
+        <Button className={classes.signUp}>Sign up</Button>
+      </Grid>
+    </Grid>
   );
 }
 
