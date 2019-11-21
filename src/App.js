@@ -7,11 +7,10 @@ import logo from "./logo.svg";
 
 const useStyles = makeStyles(theme => ({
   signUp: {
-    border: "1px solid black",
+    border: "1px solid white",
+    color: "white",
     borderRadius: 19,
-    margin: 15,
-    position: "absolute",
-    right: 0
+    margin: 15
   },
   leftContainer: {
     backgroundColor: "black",
