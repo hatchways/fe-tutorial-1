@@ -29,9 +29,10 @@ function App() {
     <Grid container style={{ height: "100vh" }}>
       <Grid item xs={6} className={classes.leftContainer}>
         left container
+        <Button className={classes.signUp}>Sign up</Button>
       </Grid>
       <Grid item xs={6} className={classes.rightContainer}>
-        <Button className={classes.signUp}>Sign up</Button>
+        right container
       </Grid>
     </Grid>
   );
