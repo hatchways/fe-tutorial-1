@@ -16,12 +16,10 @@
 .half_container {
   width: 50%;
   height: 100%;
+  padding: 20px;
 }
 
 #signup {
-  position: absolute;
-  right: 25px;
-  top: 25px;
   background-color: white;
   padding: 10px 20px;
   border-radius: 25px;
